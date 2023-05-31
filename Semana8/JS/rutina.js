@@ -1,0 +1,1 @@
+window.alert("Alerta desde el archivo JS");

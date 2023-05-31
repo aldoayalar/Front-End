@@ -1,0 +1,59 @@
+/* contenedor */
+#contenedor {
+    background: #ab7b7c;
+    width: 700px;
+    box-shadow: 8px 8px 8px grey;
+    margin: 0 auto;
+}
+
+/* cabecera */
+header {
+    background: #0cf;
+
+}
+
+/* barra de navegacion */
+nav {
+    background: #cc9;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    text-decoration: none; padding-left: .5em;
+}
+
+nav ul li a:hover{
+    color: cadetblue;
+}
+
+/* secciones */
+section {
+    background: #ccc; height: 300px; width: 60%;
+    float: left;
+    margin: 1em;
+}
+
+/* barra ateral */
+aside {
+    background: #fcf; height: 300px; width: 30%;
+    box-shadow: 8px 8px 8px grey;
+    float: right;
+    margin: 1em;
+}
+
+/* articulos */
+article {
+    background: #b74cb6; height: 200px; width: 40%;
+    float: right;
+    margin: 1em; 
+    border: thin dashed white;
+}
+
+/* pie de pagina */
+footer {
+    background: chocolate;
+    clear: both;
+}

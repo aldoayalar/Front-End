@@ -1,0 +1,36 @@
+/*Se pueden definir reglas de estilo*/
+/* Selector: Sección que referencia al documento HTML */
+/* Declaración: Sección que indica el cambio a realizar en el selector */
+/* Selector Universal */
+/** {border: thin dashed chocolate;}
+* {padding: 0px; margin: 0px;} */
+
+/* Selector de Etiqueta */
+strong {color: aliceblue;}
+body {font-family: Calibri; background-color: antiquewhite;}
+
+/* Selector de Múltiple */
+h1, h2, h3, h4, h5, h6 {border: thin dashed chocolate; 
+    background-color: bisque; 
+    text-shadow: 4px 4px 4px gray ;}
+
+/* Selector de Descendente */
+article div strong {font-size: 1.2em; color: cyan;}
+
+/* Selector de hijos */
+p > strong {color:white}
+
+/* Selector Adyacente */
+h2 + p {font-family: 'Courier New', Courier, monospace;
+        font-weight: 900;}
+
+/* Selector de Clase */
+header.articulo1 {border: thin dashed brown;
+            background-color: burlywood;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+.articulo2 {border: thin solid chocolate;
+            background-color: bisque;}
+
+/* Selector de ID */
+#pie { font-size: 0.7em; background-color: rgb(213, 141, 39);}

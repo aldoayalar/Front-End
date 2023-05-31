@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inacap - Contacto</title>
+    <meta charset="utf-8" />
+    <!--meta http-equiv="refresh" content="5; url=http://www.inacap.cl" /-->
+    <link rel="icon" href="../images/inacap.ico" />
+    <link rel="stylesheet" href="../css/estilos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&display=swap" rel="stylesheet">
+
+    <style>
+        h1, h2 {color:brown; text-shadow: 4px 4px 4px grey;}
+        img {border: thin blue dashed; }
+    </style>
+    
+</head>
+<body>
+    <h1>Formulario Contacto</h1>
+    <hr />
+    <form action="procesa.js" method="get">
+        <fieldset><legend>Login</legend>
+            <label>Rut:</label>
+            <input type="text" name="rut" value="" 
+                placeholder="12345678-9" size="15" maxlength="12"/><br />
+            <label>Password:</label>
+            <input type="password" name="clave" value="" 
+                placeholder="" size="15" maxlength=""/><br />
+        </fieldset>
+        <fieldset><legend>DAtos Personales</legend>
+        <!-- Nombre completo -->
+        <label>Nombre Completo:</label>
+        <input type="text" name="nombre" value="" 
+            placeholder="Nombres y Apellidos" size="50" maxlength="50" /> 
+        <!-- Direccion Calle, Numero, Comuna / Region -->
+        <label>Calle:</label>
+        <input type="text" name="calle" value="" 
+            placeholder="Calle donde vives" size="50" maxlength="50" /> <br />
+        <label>Número:</label>
+        <input type="number" name="nro" value="" 
+            placeholder="Número de casa" min="1" max="999999"
+            step="2" /> <br />
+        <label>Correo:</label>
+        <input type="email" name="correo" value="" 
+            placeholder="hola@chao.cl" size="50" maxlength="50" 
+            pattern="^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$"
+            /> <br />
+        <label>Página Web:</label>
+        <input type="url" name="web" value="" 
+            placeholder="http://www.hola.cl" size="50" maxlength="50"/> <br />
+        <label>Fecha Nacimiento:</label>
+        <input type="date" name="fechaNac" value="" min="2023-01-01" 
+                max="2023-03-01"
+            /> <br />
+    </fieldset>
+            
+
+
+
+        <hr>
+        <input type="submit" value="Registrar" />
+    </form>
+    </body>
+    </html>
